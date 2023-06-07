@@ -16,8 +16,8 @@ import java.util.Map;
 public class ClientApplication {
 
 	public static void main(String[] args) {
-		String path="http://localhost:8080/getImage";
-		HttpClient client=HttpClient.newHttpClient();
+		String path = "http://localhost:8080/getImage";
+		HttpClient client = HttpClient.newHttpClient();
 		try {
 
 		HttpRequest httpRequest = HttpRequest.newBuilder()
