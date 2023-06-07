@@ -20,11 +20,11 @@ public class ClientApplication {
 		HttpClient client=HttpClient.newHttpClient();
 		try {
 
-		HttpRequest httpRequest=HttpRequest.newBuilder()
+		HttpRequest httpRequest = HttpRequest.newBuilder()
 				.uri(new URI(path))
 				.header("Content-Type","application/json")
 				.GET().build();
-		HttpResponse<byte[]> response=client.send(httpRequest,HttpResponse.BodyHandlers.ofByteArray());
+		HttpResponse<byte[]> response = client.send(httpRequest,HttpResponse.BodyHandlers.ofByteArray());
 		System.out.println(response.body().length);
 		}catch (Exception e){
 			System.out.println(e);
